@@ -2,6 +2,12 @@
   flex: 1 1 50%;
   position: relative;
   border: 1px solid #efefef;
+  & h1 {
+    margin: 0;
+  }
+  & p {
+    margin: 0 0 30px;
+  }
 }
 
 .card-content {
@@ -22,4 +28,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.subtitle {
+  margin: 0 0 15px;
 }
