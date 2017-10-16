@@ -1,13 +1,25 @@
-$pseudoblack: #222222;
-$pseudowhite: #fafafa;
-$lightblue: #e3f2fd;
-$skyblue: #C0E8F9;
+$pseudoblack: #00000F;
+$blue: #1446A0;
+$lightblue: #C0E8F9;
+$skyblue: #9CF6F6;
 $pearlwhite: #FFFFF0;
 
 html {
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
+  background-color: $pseudoblack;
+  color: $pearlwhite;
 }
+
+a {
+  &:link {
+    color: $lightblue;
+  }
+  &:hover {
+    color: $skyblue;
+  }
+}
+
 
 h1, h2, h3, h4, h5 {
   line-height: 1.2;
@@ -16,7 +28,7 @@ h1, h2, h3, h4, h5 {
 .card {
   flex: 1 1 50%;
   position: relative;
-  border: 1px solid #efefef;
+  border: 1px solid $pearlwhite;
   & h1 {
     margin: 0;
   }
@@ -37,7 +49,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .card-details-inner {
-  border-top: 1px solid #efefef;
+  border-top: 1px solid $pearlwhite;
   margin: 0 30px;
   padding: 30px 0;
   display: flex;
