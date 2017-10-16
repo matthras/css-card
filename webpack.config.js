@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
 
 module.exports = {
   entry: ['./main.js', './main.scss'],
@@ -34,6 +35,13 @@ module.exports = {
       filename: 'index.html',
       template: 'main.html',
       minify: {}
+    }),
+    new HtmlWebpackIncludeAssetsPlugin({
+      assets: [
+        { path: 'https://fonts.googleapis.com/css?family=Open+Sans', type: 'css' },
+        { path: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', type: 'css'}
+      ],
+      append: true
     }),
     new OptimizeCssAssetsPlugin()
   ]
