@@ -15,10 +15,10 @@ html {
 
 a {
   &:link {
-    color: $lightblue;
+    color: $skyblue;
   }
   &:hover {
-    color: $skyblue;
+    color: $lightblue;
   }
 }
 
@@ -62,4 +62,5 @@ h1, h2, h3, h4, h5 {
 .subtitle {
   margin: 0 0 15px;
   font-weight: 700;
+  color: $skyblue;
 }
