@@ -9,6 +9,8 @@ html {
   font-family: 'Open Sans', sans-serif;
   background-color: $pseudoblack;
   color: $pearlwhite;
+  -webkit-font-smoothing: antialiased; /* Makes text more clear, crisp and defined on all browsers */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -59,4 +61,5 @@ h1, h2, h3, h4, h5 {
 
 .subtitle {
   margin: 0 0 15px;
+  font-weight: 700;
 }
