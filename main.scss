@@ -7,7 +7,7 @@ $gray: #7a7d7d;
 html {
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
-  background-color: $gray;
+  background-color: $black;
   color: $white;
   -webkit-font-smoothing: antialiased; /* Makes text more clear, crisp and defined on all browsers */
   -moz-osx-font-smoothing: grayscale;
@@ -23,17 +23,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .card {
-  background-color: $black;
+  background-color: lighten($black, 10%);
   flex: 1 1 50%;
   position: relative;
-  border: 1px solid $white;
+  border: 1px solid $black;
   & h1 {
     margin: 0;
   }
   & p {
     margin: 0 0 30px;
   }
-  box-shadow: 2px 6px 25px rgba(255,255,255,0.1);
+  box-shadow: 2px 6px 25px rgba(0,0,0,0.1);
   transition: all .3s ease;
   position: relative;
   &:hover {
