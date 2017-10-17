@@ -1,15 +1,14 @@
-$pseudoblack: #111111;
-$blue: #1446A0;
-$lightblue: #C0E8F9;
-$skyblue: #7cc6fe; /* #9CF6F6;*/
-$pearlwhite: #eeeeee;
-$gray: #424B54;
+$black: #252525;
+$lightblue: #cee5f2;
+$skyblue: #46bcde; /* #9CF6F6;*/
+$white: #fdfdfd;
+$gray: #7a7d7d;
 
 html {
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
   background-color: $gray;
-  color: $pearlwhite;
+  color: $white;
   -webkit-font-smoothing: antialiased; /* Makes text more clear, crisp and defined on all browsers */
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,10 +23,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .card {
-  background-color: $pseudoblack;
+  background-color: $black;
   flex: 1 1 50%;
   position: relative;
-  border: 1px solid $pearlwhite;
+  border: 1px solid $white;
   & h1 {
     margin: 0;
   }
@@ -54,7 +53,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .card-details-inner {
-  border-top: 1px solid $pearlwhite;
+  border-top: 1px solid $white;
   margin: 0 30px;
   padding: 30px 0;
   display: flex;
@@ -74,7 +73,7 @@ h1, h2, h3, h4, h5 {
   background: $skyblue;
   border: 1px solid $skyblue;
   padding: 0.75rem 1rem;
-  color: $pseudoblack;
+  color: $black;
   text-decoration: none;
   font-weight: 700;
   text-align: center;
