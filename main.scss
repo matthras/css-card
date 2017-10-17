@@ -1,13 +1,14 @@
-$pseudoblack: #00000F;
+$pseudoblack: #111111;
 $blue: #1446A0;
 $lightblue: #C0E8F9;
-$skyblue: #9CF6F6;
-$pearlwhite: #FFFFF0;
+$skyblue: #7cc6fe; /* #9CF6F6;*/
+$pearlwhite: #eeeeee;
+$gray: #424B54;
 
 html {
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
-  background-color: $pseudoblack;
+  background-color: $gray;
   color: $pearlwhite;
   -webkit-font-smoothing: antialiased; /* Makes text more clear, crisp and defined on all browsers */
   -moz-osx-font-smoothing: grayscale;
@@ -23,6 +24,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .card {
+  background-color: $pseudoblack;
   flex: 1 1 50%;
   position: relative;
   border: 1px solid $pearlwhite;
